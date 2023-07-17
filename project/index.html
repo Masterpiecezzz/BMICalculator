@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bmimainbox">
+        <div class="filterbox">
+            <h1>BMI CALCULATOR</h1>
+            <div>
+                <div>
+                    <label for="height">Height (cm)</label>
+                    <label for="weight">Weight (kg)</label>
+                    <label for="bmi">BMI</label>
+                </div>
+                <div>
+                    <input type="text" id="height" name="height">
+                    <input type="text" id="weight" name="weight">
+                    <input type="text" id="bmi" name="bmi" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bmiline">
+        <div class="box"></div>
+        <div class="box">
+            <p>under</p>
+            <p>weight</p>
+            <span>< 18.5</span>
+        </div>
+        <div class="box">
+            <p>normal</p>
+            <span>18.5 - 24.9</span>
+        </div>
+        <div class="box">
+            <p>overweight</p>
+            <span>25 - 29.9</span>
+        </div>
+        <div class="box">
+            <p>obese</p>
+            <span>30.0 - 35</span>
+        </div>
+        <div class="box">
+            <p>extremely</p>
+            <p>obese</p>
+            <span>35.0 ></span>
+        </div>
+        <div class="box"></div>
+        <div class="bmipointer"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
