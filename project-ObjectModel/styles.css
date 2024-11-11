@@ -1,0 +1,192 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21232b;;
+}
+p, span, h1, input, label
+{
+    font-family: 'Pangolin', cursive;
+    user-select: none;
+}
+body div.bmimainbox
+{
+    position: relative;
+    height: calc(17vh + 17vw);
+    width: calc(20vh + 20vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #18a2c5, #28c04e, #d3af0e,#d65959,#c52f2f);
+    border-radius: calc(1vh + 1vw);
+    animation: 2s hue linear infinite;
+}
+@keyframes hue
+{
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
+}
+body div.bmimainbox div.filterbox
+{
+    position: absolute;
+    top: 1.25%;
+    left: 1.25%;
+    height: 97.5%;
+    width: 97.5%;
+    display: flex;
+    justify-content: flex-start;
+    gap: calc(.4vh + .4vw);
+    align-items: center;
+    flex-direction: column;
+    padding: calc(1vh + 1vw);
+    background-color: #151516;;
+    border-radius: calc(1vh + 1vw);
+}
+body div.bmimainbox div.filterbox h1
+{
+    font-size: calc(1.5vh + 1.5svw);
+    color: #fff;
+}
+body div.bmimainbox div.filterbox div
+{
+    height: calc(10vh + 10vw);
+    width: calc(8vh + 8vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+body div.bmimainbox div.filterbox div div
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body div.bmimainbox div.filterbox div div:nth-child(1)
+{
+    gap: calc(2.2vh + 2.2vw);
+    width: 60%;
+}
+body div.bmimainbox div.filterbox div div:nth-child(2)
+{
+    gap: calc(1vh + 1vw);
+    width: 40%;
+}
+body div.bmimainbox div.filterbox div div input
+{
+    height: calc(2vh + 2vw);
+    width: calc(3vh + 3vw);
+    font-size: calc(.5vh + .5vw);
+    text-align: center;
+    border: none;
+    border-radius: calc(1vh + 1vw);
+    outline: none;
+}
+body div.bmimainbox div.filterbox div div label
+{
+    color: #fff;
+    font-size: calc(.6vh + .6vw);
+}
+body div.bmiline
+{
+    position: absolute;
+    bottom: calc(1.5vh + 1.5vw);
+    left: calc(50% - calc(12.5vh + 12.5vw));
+    height: calc(2.5vh + 2.5vw);
+    width: calc(25vh + 25vw);
+    display: flex;
+    flex-direction: row;
+}
+body div.bmiline div
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    gap: calc(.1vh + .1vw);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body div.bmiline div:nth-child(2),body div.bmiline div:nth-child(3),body div.bmiline div:nth-child(4),body div.bmiline div:nth-child(5),body div.bmiline div:nth-child(6)
+{
+    width: 18%;
+}
+body div.bmiline div:nth-child(1),body div.bmiline div:nth-child(7)
+{
+    width: 5%;
+}
+body div.bmiline div:nth-child(1)
+{
+    background-color: #18a2c5;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+body div.bmiline div:nth-child(2)
+{
+    background-color: #18a2c5;
+}
+body div.bmiline div:nth-child(3)
+{
+    background-color: #28c04e;
+}
+body div.bmiline div:nth-child(4)
+{
+    background-color: #d3af0e;
+}
+body div.bmiline div:nth-child(5)
+{
+    background-color: #d65959;
+}
+body div.bmiline div:nth-child(6)
+{
+    background-color: #c52f2f;
+}
+body div.bmiline div:nth-child(7)
+{
+    background-color: #c52f2f;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+body div.bmiline div p
+{
+    font-size: calc(.4vh + .8vw);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+body div.bmiline div span
+{
+    position: absolute;
+    top: -40%;
+    font-size: calc(.4vh + .6vw);
+    font-weight: 700;
+}
+body div.bmiline div:nth-child(2) span, body div.bmiline div:nth-child(6) span
+{
+    left: calc(50% - calc(.7vh + .7vw));
+}
+body div.bmiline div:nth-child(3) span,body div.bmiline div:nth-child(4) span,body div.bmiline div:nth-child(5) span
+{
+    left: calc(50% - calc(1.36vh + 1.36vw));
+}
+body div.bmiline div.bmipointer
+{
+    display: none;
+    position: absolute;
+    bottom: -25%;
+    left: 93.4%;
+    height: calc(.75vh + .75vw);
+    width: calc(.75vh + .75vw);
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
